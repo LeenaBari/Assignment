@@ -1,0 +1,11 @@
+create database StudentDatabase;
+use StudentDatabase;
+create table student1(stud_no int,stud_name text(30),stud_DOB date,stud_DOJ date);
+insert into student1(stud_no,stud_name,stud_DOB,stud_DOJ)values(111,"Geeta sing",'2011-3-5','2020-12-9');
+insert into student1(stud_no,stud_name,stud_DOB,stud_DOJ)values(112,"Peter Jha",'2000-12-9','2019-1-9');
+insert into student1(stud_no,stud_name,stud_DOB,stud_DOJ)values(113,"Jack Roy",'1999-10-20','2021-2-21');
+insert into student1(stud_no,stud_name,stud_DOB,stud_DOJ)values(114,"Romi",'1998-11-3','2018-5-1');
+select * from student1;
+update student1 set stud_name="Romi Harington" where stud_no=114;
+select * from student1;
+truncate table student1;
